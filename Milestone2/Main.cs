@@ -13,10 +13,12 @@ namespace Milestone2
             item.getPrice();
             item.getItemNum();
             Console.WriteLine(item.getItemName());
-            item = new InventoryItem("Silver Nonsense Scribbler", "A pen in a silver chassis.", 555618, 19.99);
+            InventoryItem item1 = new InventoryItem("Silver Nonsense Scribbler", "A pen in a silver chassis.", 555618, 19.99);
 
             items.Add(item);
-            Console.WriteLine (items[0].getItemName());
+            items.Add(item1);
+
+            InventoryItem.showAllItems(items);
         }
     }
 }

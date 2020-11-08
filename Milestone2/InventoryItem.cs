@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Milestone2
 {
@@ -66,6 +67,18 @@ namespace Milestone2
         public void setDescr(string itemDescr)
         {
             this.itemDescr = itemDescr;
+        }
+
+        public static void showAllItems(List<InventoryItem> items)
+        {
+            foreach (InventoryItem item in items)
+            {
+                Console.Write("Item name: " + item.getItemName() + " || ");
+                Console.Write("Item description: " + item.getDescr() + " || ");
+                Console.Write("Item number: " + item.getItemNum() + " || ");
+                Console.Write("Item price: " + item.getPrice() + " || ");
+                Console.WriteLine();
+            }
         }
 
 
