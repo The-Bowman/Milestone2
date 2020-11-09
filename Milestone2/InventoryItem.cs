@@ -11,6 +11,7 @@ namespace Milestone2
         private double price;
 
         //Constructor methods
+        //No-args constructor gives default values to be defined by setters
         public InventoryItem()
         {
             itemName = "Unknown";
@@ -19,6 +20,7 @@ namespace Milestone2
             price = 999.99;
         }
 
+        //Initializes with values for all data points
         public InventoryItem(string itemName, string itemDescr, int itemNum, double price)
         {
             this.itemName = itemName;
@@ -69,6 +71,7 @@ namespace Milestone2
             this.itemDescr = itemDescr;
         }
 
+        //goes through each item in the List and prints out all values
         public static void showAllItems(List<InventoryItem> items)
         {
             foreach (InventoryItem item in items)
